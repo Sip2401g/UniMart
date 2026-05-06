@@ -1,0 +1,23 @@
+# Environment files
+.env
+.env.*
+
+# Python
+**/__pycache__/
+**/*.pyc
+ai-services/.venv/
+ai-services/.env
+
+# Node
+**/node_modules/
+frontend/dist/
+
+# Runtime uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*

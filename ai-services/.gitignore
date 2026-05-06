@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+ai-services/.env
+
+# Node
+node_modules/
+backend/.env
+frontend/.env
+
+# Uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Build
+frontend/dist/
+.env
+.env.*
