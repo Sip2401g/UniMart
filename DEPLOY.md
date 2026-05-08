@@ -1,5 +1,20 @@
 # College Marketplace Deployment (Render)
 
+## Frontend-only deploy (quickest)
+
+If you only want the React app online:
+
+1. Go to [Vercel](https://vercel.com/new) and import this GitHub repo.
+2. Set **Root Directory** to `frontend`.
+3. Add environment variables:
+   - `VITE_API_URL` = your backend base URL (for example `https://your-backend.onrender.com`)
+   - `VITE_UPLOADS_URL` = same backend base URL
+4. Deploy.
+
+Notes:
+- `frontend/vercel.json` is already added so React routes do not show `Not Found` on refresh.
+- If backend is not deployed, login/products/AI calls will fail; only static UI pages will load.
+
 This project has 3 services:
 - `frontend` (Vite static site)
 - `backend` (Node/Express API)
